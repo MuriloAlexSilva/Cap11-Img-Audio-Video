@@ -6,13 +6,22 @@
     <title>Video</title>
 </head>
 <body>
-    <h1>Utilizando Filmes no site</h1>
+    <h1>Utilizando Videos no site com HTML</h1>
     <h2>Utilizando o Handbrake</h2>
     <p>
         Insira o arquivo desejado no handbrake e em Presets selecione Web e selecione o formato desejado, sugestão seria o Vimeo Youtube 720p30, feito isto clique em Star Encode
     </p>
-    <h2>
-
-    </h2>
+    <h2>Inserindo videos hospedados localmente</h2>
+    <h4>Nota: Videos hospedados no proprio servidor, consomem muitos dados, pesando assim no custo do cliente, que paga a hospedagem por trafego de dados.</h4>
+    <p>O video abaixo esta hospedado no meu próprio servidor, com a tag video.</p>
+    <video src="video/meu-video.mp4" width="500" controls></video><!--O width seria para a largura e o controls seria para os controles de play-->
+    <p>O video abaixo esta hospedado no meu próprio servidor, com a tag video, porém o Source separado.</p>
+    <video width="500" controls poster="images/capa.png">
+        <source src="video/meu-video.m4v" type="video/mp4">
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <source src="video/meu-video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <!--Fazendo assim, seria um modo cascata, primerio ele vai tentar reproduzir o m4v, caso não consiga, irá tentar reproduzir o mp4, e assim até chegar na msg do p, que seria se o navegador não conseguir reproduzir nenhum dos formatos.-->
+    </video>
 </body>
 </html>
