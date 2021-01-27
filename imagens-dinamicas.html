@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+<h1>Imgens Dinâmicas</h1>
+    <p>
+        Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador, para isto utilizamos a <b>Tag Picture</b>.
+       
+    </p>
+    <picture>
+        <!--Sempre insira 50px a mais do que o tamanho da imagem, assim não irá aparecer a barra de rolagem.-->
+        <!--O source sempre deverá seguir esta ordem, sendo do menor para o maior, caso seja alterado, não irá funcionar a responsividade-->
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <a href="../Cap11-Img-Audio-Video/index.html" rel="prev"><h2>Voltar para Home</h2></a>
+    <a href="../Cap11-Img-Audio-Video/sound.html" rel="next"><h2>Ir para Sounds</h2></a>
+    
+</body>
+</html>

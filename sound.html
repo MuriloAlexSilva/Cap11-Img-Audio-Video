@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios</title>
+</head>
+<body>
+    <h1>Inserindo audios</h1>
+    <h2>
+        <p>Vamos aprender a reproduzir audios em HTML5</p>
+    </h2>
+    <p>Você teria 2 formas de adicionar audios na pagina, sendo esta abaixo:</p>
+    <audio 
+        src="sound/American Idle - RKVC.mp3" controls autoplay >
+    </audio>
+    <!--A tag acima, Funciona para formatos MP3, WAV e OGG-->
+    <p>E esta logo abaixo:</p>
+    <audio preload="metadata" autoplay controls><!--Se vc colocar o loop, faz com que o audio fica em loop-->
+        <!--No preload metadata, so vai carregar o audio ao clicar e no preload auto carrega na hora de chamar o site, porém em arquivos grandes irá demorar para carregar o site, sendo isso ruim-->
+        <source src="sound/American Idle - RKVC.mp3" type="audio/mpeg">
+            <!--Seria o type mpeg para mp3 -- ogg para ogg e wav para wav, o wav é muito pesado, não é muito recomendavel-->
+
+    </audio>
+    <a href="../Cap11-Img-Audio-Video/index.html" rel="prev"><h2>Voltar para a Home</h2></a>
+    <a href="../Cap11-Img-Audio-Video/imagens-dinamicas.html" rel="next"><h2>Ir para Imagens</h2></a>
+</body>
+</html>
