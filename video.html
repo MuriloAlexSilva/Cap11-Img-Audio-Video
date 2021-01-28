@@ -14,7 +14,7 @@
     <h2>Inserindo videos hospedados localmente</h2>
     <h4>Nota: Videos hospedados no proprio servidor, consomem muitos dados, pesando assim no custo do cliente, que paga a hospedagem por trafego de dados.</h4>
     <p>O video abaixo esta hospedado no meu próprio servidor, com a tag video.</p>
-    <video src="video/meu-video.mp4" width="500" controls></video><!--O width seria para a largura e o controls seria para os controles de play-->
+    <video src="video/meu-video.mp4" width="560" controls></video><!--O width seria para a largura e o controls seria para os controles de play-->
     <p>O video abaixo esta hospedado no meu próprio servidor, com a tag video, porém o Source separado.</p>
     <video width="500" controls poster="images/capa.png">
         <source src="video/meu-video.m4v" type="video/mp4">
@@ -23,5 +23,13 @@
         <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
         <!--Fazendo assim, seria um modo cascata, primerio ele vai tentar reproduzir o m4v, caso não consiga, irá tentar reproduzir o mp4, e assim até chegar na msg do p, que seria se o navegador não conseguir reproduzir nenhum dos formatos.-->
     </video>
+    <h3>Mostrando videos com links copiados direto do youtube</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DIraePpIAog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <a href="../Cap11-Img-Audio-Video/index.html" rel="prev"><h2>Voltar para a Home</h2></a>
+    <a href="../Cap11-Img-Audio-Video/sound.html" rel="next"><h2>Ir para Sounds</h2></a>
+    <a href="../Cap11-Img-Audio-Video/imagens-dinamicas.html" rel="next"><h2>Ir para Imagens</h2></a>
 </body>
 </html>
